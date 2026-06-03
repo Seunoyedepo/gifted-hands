@@ -2,3 +2,33 @@ body{
     margin: 0;
     padding: 0;
 }
+header{
+    background-color: #0a4d68;
+    padding: 20px;
+}
+/* Website title */
+h1{
+    color: white;
+}
+
+/* NAVIGATION LINKS */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MENU LIST */
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin-left: 20px;
+}
