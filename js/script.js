@@ -52,3 +52,29 @@ if (donation >= 5000){
 } else{
     console.log("Thank you for supporting Gifted Hands");
 }
+
+for (let i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+for(let a = 1; a<=10; a++){
+    console.log("Volunteer " + a + " Registered");
+}
+
+// LOOPS COUNTIMG BACKWARDS
+
+for(let i = 5; i >= 1; i--){
+    console.log("Event starts in " + i + "sec");
+}
+
+console.log("The event has started !");
+
+// NESTED LOOPS
+
+for (let event = 1; event <= 3; event++){
+    console.log("Event" + event);
+
+    for(let volunteer = 1; volunteer <=2; volunteer++){
+        console.log("volunteer" + volunteer);
+    }
+}
