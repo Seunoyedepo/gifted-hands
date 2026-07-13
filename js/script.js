@@ -1,4 +1,4 @@
-
+console.log("Javascript is Running");
 let organization = "Gifted Hands";
 let city = "Ibadan";
 let volunteers = 50;
@@ -53,6 +53,7 @@ if (donation >= 5000){
     console.log("Thank you for supporting Gifted Hands");
 }
 
+// LEARNING LOOPS
 for (let i = 1; i <= 5; i++){
     console.log(i);
 }
@@ -78,3 +79,88 @@ for (let event = 1; event <= 3; event++){
         console.log("volunteer" + volunteer);
     }
 }
+
+for (let day = 1; day <= 3; day++){
+    console.log("day" + " " + day);
+
+    for(let task = 1; task <= 2; task++){
+        console.log("Task" + " " + task)
+    }
+}
+// LEARNING ARRAYS
+ events =["Food Drive",
+     "Medical Outreach",
+      "Charity Concert",
+      "Youth Seminar"
+    ];
+console.log(events.length);
+
+let volunteerss =["Seun", "David", "Grace"];
+donation = [5000, 10000, 7000];
+console.log(volunteerss[0]);
+console.log(donation[2]);
+
+let programs = [
+    "Education Support",
+    "Medical Outreach",
+    "Youth Empowerment",
+    "Food Relief"
+];
+console.log(programs.length)
+
+//THE COMBINATIONS OF ARRAYS AND LOOP
+let volunteers1 = ["Seun Oyedepo", "David Ubani", "Grace Mfon"];
+for (let i = 0; i < volunteers1.length; i++){
+    console.log(volunteers1[i]);
+}
+console.log(volunteers1.length);
+
+let programs1 = ["Education Support1", "Medical Outreach1", "Food Relief1"];
+for (let a = 0; a < programs1.length; a++){
+    console.log(programs1[a]);
+}
+
+let programs3 = ["Food Drive 3", "Medical Outreach 3", "Charity Concert 3", "Youth Seminar 3"];
+for (let p = 0; p < programs3.length; p++){
+    console.log(programs3[p]);
+}
+
+let events2=[
+    "Food Drive",
+    "Medical Outreach"
+];
+console.log(events2);{
+    events2.push("Charity Concert");
+    console.log(events2);
+}
+
+let programs5 = [
+    "Medical Outreach",
+    "Charity Concert"
+];
+
+console.log(programs5);
+
+programs5.unshift("Food Drive");
+programs5.push("Youth Seminar");
+
+console.log(programs5);
+
+programs5.shift();
+programs5.pop();
+
+console.log(programs5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

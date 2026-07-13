@@ -76,3 +76,16 @@ if (!registrationClosed){
 } else {
     console.log("Registration is Closed")
 }
+
+// loops
+for(let i = 10; i >= 2; i-=2){
+    console.log(i)
+}
+
+for(let e = 1; e <= 10; e+=2){
+    console.log(e)
+}
+
+for (let concert = 1; concert <= 10; concert++){
+    console.log(concert)
+}
