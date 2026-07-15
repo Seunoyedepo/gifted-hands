@@ -151,9 +151,101 @@ programs5.pop();
 
 console.log(programs5);
 
+let events5 = [
+    "Food Drive",
+    "Medical Outreach",
+    "Charity Concert",
+    "Youth Seminar"
+];
+console.log(events5[events5.length - 1]);
 
+let donations5 =[5000, 7000, 10000, 15000];
+console.log(donations5[donations5.length-1]);
 
+let events6 = [
+    "Food Drive",
+    "Medical Outreach",
+];
+events6.push("Charity Concert");
+events6.push("Youth Seminar");
 
+console.log(events6[events6.length-1])
+
+let volunteers6 = [
+    "Seun",
+    "David",
+    "Grace",
+    "Esther"
+];
+console.log(volunteers6[volunteers6.length - 1]);
+
+console.log(volunteers6[0]);
+
+let cities = [
+    "Lagos",
+    "Ibadan",
+    "Abuja"
+];
+
+cities[1] ="Kano";
+console.log(cities);
+
+let volunteers7 = [
+    "Seun",
+    "David",
+    "Grace"
+];
+
+for (let i =0; i < volunteers7.length; i++){
+    console.log(volunteers7[i]);
+}
+
+let programs7 = [
+    "Food Drive",
+    "Medical Outreach",
+    "Youth Seminar"
+];
+
+programs7[2] = "Community Outreach";
+
+for (let i = 0; i < programs7.length; i++){
+    console.log(programs7[i]);
+}
+
+// LEARNING FUNCTIONS
+
+function greet(){
+    console.log("Hello");
+}
+greet();
+
+function welcomeVolunteer(name){
+    console.log("Welcome " + name + " !")
+}
+welcomeVolunteer("Oluwaseun");
+welcomeVolunteer("David");
+welcomeVolunteer("Grace");
+
+function thankDonor(name){
+    console.log("Thank you for your donation, " + name + " !");
+}
+thankDonor("Dr. Martina");
+thankDonor("Mr. Ade");
+thankDonor("Mrs. Johnson");
+
+function introduce(name){
+    console.log("My name is " + name + ".");
+}
+introduce("Seun");
+introduce("David");
+introduce("Grace");
+
+function registerVolunteer(name, city){
+    console.log(name +" registered from " + city);
+}
+registerVolunteer("Seun", "Ibadan");
+registerVolunteer("David", "Lagos");
+registerVolunteer("Grace", "Abuja");
 
 
 
