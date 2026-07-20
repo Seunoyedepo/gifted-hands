@@ -247,6 +247,247 @@ registerVolunteer("Seun", "Ibadan");
 registerVolunteer("David", "Lagos");
 registerVolunteer("Grace", "Abuja");
 
+// LEARNING RETURN FUNCTION
+function addNumber(){
+    return 5 + 3;
+}
+let result = addNumber;
+console.log(result);
+
+function getMission(){
+    return "Serving Humanity";
+}
+let mission = getMission();
+console.log(mission);
+
+function add(a, b){
+    return a + b;
+}
+let answer = add(10, 5);
+console.log(answer);
+
+function totalDonation(first, second){
+    return first + second;
+}
+let donation6 = totalDonation(5000, 7000);
+console.log(donation6);
+
+function multiply(a, b){
+    return a * b;
+}
+let answer1 = multiply(6, 4);
+console.log(answer1);
+
+// USING RETURNED VALUES
+
+function fullName(firstName, lastName){
+    return firstName + " " + lastName;
+}
+let fullNames = fullName("Seun", "Oyedepo");
+console.log(fullNames);
+
+function calculateAge(birthYear){
+    return 2026 - birthYear;
+}
+let age1 = calculateAge(1954);
+console.log(age1);
+
+// FUNCTIONS CALLING OTHER FUNCTIONS
+function add(a, b){
+    return a + b;
+}
+function doubleNumber(number){
+    return number * 2
+}
+let addition = add(10, 5);
+let multiple = doubleNumber(addition);
+console.log(multiple);
+
+// ANOTHER EXAMPLE
+function totalDonation1(first, second){
+    return first + second;
+}
+function thankDonor1(total){
+    return "Thank you! Total donation is N" + total;
+}
+
+let a = totalDonation(5000, 10000);
+let b = thankDonor1(a);
+
+console.log(b);
+
+function multiply(a, b){
+    return a * b;
+}
+function showresult(answer2){
+    return "The answer is" + " " +answer2
+}
+
+let result1 = multiply(8, 5);
+let c = showresult(result1);
+console.log(c);
+
+// SCOPE (LOCAL SCOPE)
+function greet1(){
+    let name1 = "Seun";
+    console.log(name1);
+}
+greet1();
+
+// GLOBAL SCOPE
+let organization2 = "Gifted Hands";
+
+function showOrganization(){
+    console.log(organization2);
+}
+
+showOrganization();
+console.log(organization2);
+
+// PRACTICE CHALLENGE
+let organization3 = "Gifted Hands";
+
+function showInfo(){
+    let volunteer2 = "Seun Oyedepo";
+    console.log(organization3);
+    console.log(volunteer2);
+}
+showInfo();
+
+let organization1 = "Gifted Hands";
+function showOrganization1(){
+    let organization1 = "Hope Foundation";
+    console.log(organization1);
+}
+showOrganization1();
+console.log(organization1);
+
+function registerVolunteer1(name2){
+    let organization4 = "Gifted Hands";
+    
+}
+
+//LEARNING OBJECT
+let volunteer3 = {
+    name : "Seun Oyedepo",
+    Age : 45,
+    city : "Ibadan",
+}
+console.log(volunteer3.Age);
+console.log(volunteer3.name);
+console.log(volunteer3.city);
+
+let organization5 = {
+    name : "Gifted Hands",
+    city : "Ibadan",
+    founded : "2020"
+};
+console.log(organization5.name);
+
+let event1 = {
+    title : "Food Drive",
+    location : "Ibadan",
+    year : 2026
+};
+
+console.log(event1.title);
+console.log(event1.location);
+
+let volunteer4 = {
+    name : "Oluwaseun",
+    city : "Ibadan",
+    role : "Volunteer"
+};
+volunteer4.city = "Lagos";
+volunteer4.role = "Team Leader";
+console.log(volunteer4.city);
+console.log(volunteer4.role);
+
+
+let organization6 = {
+    name : "Gifted Hands",
+}
+organization6.city = "Ibadan";
+organization6.founded = 2020;
+
+console.log(organization6.city);
+console.log(organization6.founded);
+
+// ARRAYS OF OBJECTS
+let events3 = [
+    {
+        title : "Food Drive",
+        city : "Ibadan"
+    },
+
+    {
+        title : "Medical Outreach",
+        city : "Lagos"
+    },
+
+    {
+        title : "Youth Seminar",
+        city : "Abuja"
+    }
+
+];
+
+console.log(events3[0].title);
+console.log(events3[1].city);
+console.log(events3[2].title);
+
+
+// PRACTICE CHALLENGE
+let programs2 = [
+    {
+        title : "Food Drive",
+        city : "Ibadan"
+    },
+
+    {
+        title : "Medical Outreach",
+        city : "Lagos",
+    },
+
+    {
+        title : "Youth Seminar",
+        city : "Abuja"
+    },
+];
+
+for(let i = 0; i < programs2.length; i++){
+    console.log(programs2[i].title + " - " + programs2[i].city);
+}
+
+// PRACTICE CHALLENGE OF WHOLE OBJECT VS PROPERTY
+let programs4 = [
+    {
+        title : "Food Drive",
+        city : "Ibadan",
+        year : 2026
+    },
+
+    {
+        title : "Medical Outreach",
+        city : "Lagos",
+        year : 2026
+    },
+];
+
+console.log(programs4[0]);
+console.log(programs4[0].title);
+console.log(programs4[1].city);
+console.log(programs4[1].year);
+
+
+
+
+
+
+
+
+
+
 
 
 
