@@ -479,10 +479,95 @@ console.log(programs4[0].title);
 console.log(programs4[1].city);
 console.log(programs4[1].year);
 
+// LEARNING FOR...OF LOOP
+let volunteer1 = ["Seun Oyedepo", "David Ubani", "Grace Nnamdi"];
+for (let v of volunteer1){
+    console.log(v);
+};
 
+let programs6 = [
+    {
+        title : "Food Drive",
+        city : "Ibadan"
+    },
 
+    {
+        title : "Medical Outreach",
+        city : "Lagos"
+    },
 
+    {
+        title : "Youth Seminar",
+        city : "Abuja"
+    }
+];
 
+for (let p of programs6){
+    console.log(p.title + " (" + p.city + ")");
+};
+
+// PRACTICE CHALLENGE
+let volunteer5 = [
+    {
+        name : "Seun",
+        city : "Ibadan"
+    },
+
+    {
+        name : "David",
+        city : "Lagos"
+    },
+
+    {
+        name : "Grace",
+        city : "Abuja"
+    }
+];
+
+for (let vlt of volunteer5){
+    console.log(vlt.name + " - " + vlt.city);
+};
+
+// LEARNING JAVASCRIPT METHODS
+let volunteers2 = [
+    "Seun",
+    "David",
+    "Grace"
+];
+console.log(volunteers2.includes("David"))
+
+let event2 = [
+    "Food Drive",
+    "Medical Outreach",
+    "Youth Seminar"
+];
+console.log(event2.includes("Food Drive"));
+console.log(event2.includes("Charity Concert"));
+console.log(event2.includes("Youth Seminar"));
+
+let programs8 =[
+    "Food Drive",
+    "Medical Outreach",
+    "Youth seminar"
+];
+console.log(programs8.join(", "));
+
+let volunteer6 = [
+    "Seun",
+    "David",
+    "Grace"
+];
+
+console.log("Volunteers: " + volunteer6.join(", "));
+
+let cities1 =[
+    "Ibadan",
+    "Lagos",
+    "Abuja"
+];
+console.log(cities1.join(", "));
+console.log(cities1.join(" | "));
+console.log("Cities:" + cities1.join(", "));
 
 
 
