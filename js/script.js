@@ -569,11 +569,46 @@ console.log(cities1.join(", "));
 console.log(cities1.join(" | "));
 console.log("Cities:" + cities1.join(", "));
 
+// LEARNING OTHER ARRAY METHODS
+let programs9 = [
+    "Food Drive",
+    "Medical Outreach",
+    "Youth Seminar"
+];
+console.log(programs9.indexOf("Food Drive"));
 
+let events1 = [
+    "Food Drive",
+    "Medical Outreach",
+    "Youth Seminar"
+];
+console.log(events1.indexOf("Food Drive"));
+console.log(events1.indexOf("Youth Seminar"));
+console.log(events1.indexOf("Charity Concert"));
 
+let volunteers3 = [
+    "Seun",
+    "David",
+    "Grace",
+    "Esther",
+    "Daniel"
+];
+console.log(volunteers3.slice(0, 2));
+console.log(volunteers3.slice(2));
+console.log(volunteers3);
 
-
-
+let morningEvents = [
+    "Food Drive",
+    "Medical Outreach"
+];
+let eveningEvents = [
+    "Youth Seminar",
+    "Charity Concert"
+];
+let allEvents = morningEvents.concat(eveningEvents);
+console.log(allEvents);
+console.log(morningEvents);
+console.log(eveningEvents);
 
 
 
