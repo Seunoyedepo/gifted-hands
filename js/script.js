@@ -610,9 +610,32 @@ console.log(allEvents);
 console.log(morningEvents);
 console.log(eveningEvents);
 
+//LEARNING THE REVERSE ()
+let volunteers4 = [
+    "Seun",
+    "David",
+    "Grace",
+    "Esther"
+];
+volunteers4.reverse();
+console.log(volunteers4);
 
+let programs10 = [
+    "Youth Seminar",
+    "Food Drive",
+    "Medical Outreach",
+    "Charity Concert"
+];
+programs10.sort();
+console.log(programs10);
 
-
+let volunteers5 = [
+    "Seun",
+    "David",
+    "Grace"
+];
+volunteers5.splice(1, 1, "Esther");
+console.log(volunteers5);
 
 
 
